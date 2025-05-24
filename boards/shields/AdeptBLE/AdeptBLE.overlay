@@ -3,6 +3,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <dt-bindings/zmk/pointing.h>
+
+// mouse scroll speed 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 5
 
 // layers
 #define DEFAULT 0
@@ -144,7 +148,7 @@
     };
     scroll {
         layers = <SCRLM SCRLH>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_swap_mapper>, <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_swap_mapper>, <&zip_xy_scaler 1 10>, <&zip_xy_to_scroll_mapper>;
         process-next;
     };
     snipe {
