@@ -1,9 +1,6 @@
 if SHIELD_ADEPTBLE
 
-config ZMK_KEYBOARD_NAME
-    default "Trackball Magic 8"
-
-endif
+CONFIG_ZMK_KEYBOARD_NAME="Trackball Magic 8"
 
 config SPI
 	default y
