@@ -1,6 +1,6 @@
 file_format: "1"
 id: AdeptBLE
-name: Trackball Magic 8
+name: AdeptBLE
 type: shield
 url: https://github.com/taichan1113/mouse-test
 requires: [seeeduino_xiao_ble]
